@@ -1,0 +1,44 @@
+column,unique_categories,missing_%,dominant_%,strategy,reason
+MSZoning,5,0.0,78.84,onehot_encode,Nominal <=10 categories
+Street,2,0.0,99.59,drop,>50% missing or >95% dominant
+Alley,2,93.77,93.77,drop,>50% missing or >95% dominant
+LotShape,4,0.0,63.36,onehot_encode,Nominal <=10 categories
+LandContour,4,0.0,89.79,onehot_encode,Nominal <=10 categories
+Utilities,2,0.0,99.93,drop,>50% missing or >95% dominant
+LotConfig,5,0.0,72.05,onehot_encode,Nominal <=10 categories
+LandSlope,3,0.0,94.66,onehot_encode,Nominal <=10 categories
+Neighborhood,25,0.0,15.41,frequency_encode,High-cardinality nominal
+Condition1,9,0.0,86.3,onehot_encode,Nominal <=10 categories
+Condition2,8,0.0,98.97,drop,>50% missing or >95% dominant
+BldgType,5,0.0,83.56,onehot_encode,Nominal <=10 categories
+HouseStyle,8,0.0,49.73,onehot_encode,Nominal <=10 categories
+RoofStyle,6,0.0,78.15,onehot_encode,Nominal <=10 categories
+RoofMatl,8,0.0,98.22,drop,>50% missing or >95% dominant
+Exterior1st,15,0.0,35.27,frequency_encode,High-cardinality nominal
+Exterior2nd,16,0.0,34.52,frequency_encode,High-cardinality nominal
+MasVnrType,3,59.73,59.73,drop,>50% missing or >95% dominant
+ExterQual,4,0.0,62.05,label_encode,Ordinal quality scale
+ExterCond,5,0.0,87.81,onehot_encode,Nominal <=10 categories
+Foundation,6,0.0,44.32,onehot_encode,Nominal <=10 categories
+BsmtQual,4,2.53,44.45,label_encode,Ordinal quality scale
+BsmtCond,4,2.53,89.79,onehot_encode,Nominal <=10 categories
+BsmtExposure,4,2.6,65.27,onehot_encode,Nominal <=10 categories
+BsmtFinType1,6,2.53,29.45,onehot_encode,Nominal <=10 categories
+BsmtFinType2,6,2.6,86.03,onehot_encode,Nominal <=10 categories
+Heating,6,0.0,97.81,drop,>50% missing or >95% dominant
+HeatingQC,5,0.0,50.75,onehot_encode,Nominal <=10 categories
+CentralAir,2,0.0,93.49,onehot_encode,Nominal <=10 categories
+Electrical,5,0.07,91.37,onehot_encode,Nominal <=10 categories
+KitchenQual,4,0.0,50.34,label_encode,Ordinal quality scale
+Functional,7,0.0,93.15,onehot_encode,Nominal <=10 categories
+FireplaceQu,5,47.26,47.26,label_encode,Ordinal quality scale
+GarageType,6,5.55,59.59,onehot_encode,Nominal <=10 categories
+GarageFinish,3,5.55,41.44,onehot_encode,Nominal <=10 categories
+GarageQual,5,5.55,89.79,label_encode,Ordinal quality scale
+GarageCond,5,5.55,90.82,onehot_encode,Nominal <=10 categories
+PavedDrive,3,0.0,91.78,onehot_encode,Nominal <=10 categories
+PoolQC,3,99.52,99.52,drop,>50% missing or >95% dominant
+Fence,4,80.75,80.75,drop,>50% missing or >95% dominant
+MiscFeature,4,96.3,96.3,drop,>50% missing or >95% dominant
+SaleType,9,0.0,86.78,onehot_encode,Nominal <=10 categories
+SaleCondition,6,0.0,82.05,onehot_encode,Nominal <=10 categories
